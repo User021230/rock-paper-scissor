@@ -5,7 +5,7 @@ function getcomputerChoice(){
 }
 
 function Round(playerSelection,computerSelection){
-    var result = "";
+    let result = "";
     if(playerSelection==computerSelection){
         result = 2;
     }else if((playerSelection=="scissors" && computerSelection=="paper") ||(

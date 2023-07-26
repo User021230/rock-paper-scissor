@@ -22,9 +22,19 @@ function Round(playerSelection,computerSelection){
 
 
 function game(){
+    let PlayerScore = 0;
+    let ComputerScore = 0;
     for(i = 0;i < 5; i++){
-        if()
+        if(round()==1){
+            PlayerScore +=1; 
+        }else if(round()=2){
+            ComputerScore +=1;
+        }else if(round()==0){
+            i--;
+        }
     }
+
+    
 }
 console.log("Hello World")
 console.log(Round("scissor",getcomputerChoice().toLowerCase()));

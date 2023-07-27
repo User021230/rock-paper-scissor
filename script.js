@@ -22,27 +22,26 @@ function Round(playerSelection,computerSelection){
 
 
 function game(){
-    let PlayerS = prompt("Rock Paper or Scissor?").toLowerCase();
+    
     let PlayerScore = 0;
     let ComputerScore = 0;
     resume = true;
     while(resume){
-        
-        if(round(PlayerS,getcomputerChoice())==1){
+        let PlayerS = prompt("Rock Paper or Scissor?").toLowerCase();
+        if(Round(PlayerS,getcomputerChoice())==1){
             PlayerScore +=1;
             console.log("player Score: " + PlayerScore);
-        }else if(round(playerS,getcomputerChoice())=2){
+        }else if(Round(PlayerS,getcomputerChoice())==2){
             ComputerScore +=1;
             console.log("Computer Score: " + ComputerScore);
-        }else if(round(playerS,getcomputerChoice())==0){
-            i--;
+        }else if(Round(PlayerS,getcomputerChoice())==0){
             console.log("Draw");
         }
 
-        if(playerScore = 5){
+        if(PlayerScore == 5){
             console.log("player Wins");
             resume = false;
-        }else if(ComputerScore  = 5){
+        }else if(ComputerScore == 5){
             console.log("computer wins");
             resume = false;
         }
@@ -52,3 +51,4 @@ function game(){
 }
 console.log("Hello World")
 console.log(Round("scissor",getcomputerChoice().toLowerCase()));
+game();

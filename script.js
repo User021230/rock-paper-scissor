@@ -22,18 +22,19 @@ function Round(playerSelection,computerSelection){
 
 
 function game(){
+    let PlayerS = prompt("Rock Paper or Scissor?").toLowerCase();
     let PlayerScore = 0;
     let ComputerScore = 0;
     resume = true;
     while(resume){
         
-        if(round()==1){
+        if(round(PlayerS,getcomputerChoice())==1){
             PlayerScore +=1;
             console.log("player Score: " + PlayerScore);
-        }else if(round()=2){
+        }else if(round(playerS,getcomputerChoice())=2){
             ComputerScore +=1;
             console.log("Computer Score: " + ComputerScore);
-        }else if(round()==0){
+        }else if(round(playerS,getcomputerChoice())==0){
             i--;
             console.log("Draw");
         }

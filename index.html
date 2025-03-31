@@ -2,9 +2,19 @@
 <html>
     <head>
         <title>Rock Paper Scissor</title>
-        
     </head>
     <body>
+        <button onclick="game('rock')">ROCK</button>
+        <button onclick="game('paper')">PAPER</button>
+        <button onclick="game('scissor')">SCISSOR</button>
+        <div>
+            <label>Player Score:</label>
+            <p id="player-score"></p>
+            <label>Computer Score:</label>
+            <p id="computer-score"></p>
+            <br>
+            <p id="round-res"></p>
+        </div>
         <script src="script.js"></script>
     </body>
 </html>
